@@ -31,11 +31,19 @@ class LoginSessionForm extends React.Component {
 
     render() {
         return (
-          <div className="login-form">
+          <div>
+          <div className="login-header">
+              <h1>Yalp</h1>
+          </div>
+
+         
+
+
+          <div className="form-container">
             <form onSubmit={this.handleSubmit} className="login-form-box">
-              Welcome to Yalp!
+              Sign into Yalp
               <br/>
-              Please Sign In 
+              
               {/* {this.renderErrors()} */}
               <div className="login-username">
                 <br/>
@@ -52,7 +60,7 @@ class LoginSessionForm extends React.Component {
                   <input type="password"
                     value={this.state.password}
                     onChange={this.update('password')}
-                    className="login-input"
+                    className="login-password"
                     placeholder="Password"
                   />
                 <br/>
@@ -60,6 +68,7 @@ class LoginSessionForm extends React.Component {
                 <input className="login-session-submit" type="submit" value={this.props.formType} />
               
             </form>
+          </div>
           </div>
         );
     }
