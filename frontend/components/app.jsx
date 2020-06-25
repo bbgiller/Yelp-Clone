@@ -6,13 +6,15 @@ import SignUpSessionForm from './session_form/signup_session_form';
 import LoginSessionForm from './session_form/login_session_form'
 import LogInFormContainer from './session_form/login_form_container';
 // import Header from './header/header'
+import Greeting from './greeting/greeting'
+import GreetingContainer from './greeting/greeting_container'
 
 const App = () => (
   <div>
       <header>
-
+        <GreetingContainer />
        {/* <LogInFormContainer /> */}
-       <SignUpFormContainer />
+       {/* <SignUpFormContainer /> */}
     </header>
       <Switch>
     
