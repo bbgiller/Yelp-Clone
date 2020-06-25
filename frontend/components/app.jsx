@@ -11,8 +11,8 @@ const App = () => (
   <div>
       <header>
 
-       <LogInFormContainer />
-       {/* <SignUpFormContainer /> */}
+       {/* <LogInFormContainer /> */}
+       <SignUpFormContainer />
     </header>
       <Switch>
     

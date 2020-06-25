@@ -1,4 +1,4 @@
-// import React from 'react';
+import React from 'react';
 
 // class Header extends React.Component {
 //     constructor(props) {
@@ -12,4 +12,4 @@
 //     }
 // } 
 
-// export default Header;
+export default Header;

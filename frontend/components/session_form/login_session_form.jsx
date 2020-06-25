@@ -1,9 +1,10 @@
 import React from 'react';
+import {Link} from 'react-router-dom'
 
 class LoginSessionForm extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {username: '', password: ''};
+        this.state = {email: '', password: ''};
         this.handleSubmit = this.handleSubmit.bind(this);
     }
 
@@ -32,8 +33,8 @@ class LoginSessionForm extends React.Component {
     render() {
         return (
           <div>
-          <div className="login-header">
-              <h1>Yalp</h1>
+          <div className="session-header">
+              {/* <Link to="/signup">Yalp</Link> */}
           </div>
 
          
@@ -45,12 +46,12 @@ class LoginSessionForm extends React.Component {
               <br/>
               
               {/* {this.renderErrors()} */}
-              <div className="login-username">
-                <br/>
+              <div className="login-email">
+                
              
                   <input type="text"
-                    value={this.state.username}
-                    onChange={this.update('username')}
+                    value={this.state.email}
+                    onChange={this.update('email')}
                     className="login-input"
                     placeholder="Email"
                   />
