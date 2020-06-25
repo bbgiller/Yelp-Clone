@@ -9,8 +9,8 @@ import LogInFormContainer from './session_form/login_form_container';
 const App = () => (
   <div>
       <header>
-       {/* <LogInFormContainer /> */}
-       <SignUpFormContainer />
+       <LogInFormContainer />
+       {/* <SignUpFormContainer /> */}
     </header>
       <Switch>
     
