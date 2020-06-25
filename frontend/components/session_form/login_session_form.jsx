@@ -33,9 +33,7 @@ class LoginSessionForm extends React.Component {
     render() {
         return (
           <div>
-          <div className="session-header">
-              {/* <Link to="/signup">Yalp</Link> */}
-          </div>
+       
 
          
 
@@ -67,6 +65,8 @@ class LoginSessionForm extends React.Component {
                 <br/>
                 <br/>
                 <input className="login-session-submit" type="submit" value={this.props.formType} />
+                <p>New to Yalp?</p>
+                <Link to="/signup">Sign Up</Link>
               
             </form>
           </div>

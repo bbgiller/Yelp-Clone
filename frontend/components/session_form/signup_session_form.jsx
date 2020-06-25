@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 class SignUpSessionForm extends React.Component {
     constructor(props) {
@@ -35,22 +36,24 @@ class SignUpSessionForm extends React.Component {
 
 
 
-        <div className="session-header">
+        {/* <div className="session-header">
             <h1>Yalp</h1>
 
-        </div>  
+        </div>   */}
 
-            <div className="image"></div>
+            <div className="image">
+
+            </div>
           <div className="form-container">
             <form onSubmit={this.handleSubmit} className="signup-form-box">
               Signup for Yalp
-              <br/>
+         
               {this.renderErrors()}
 
                <div className="name-container">
 
               <div className="signup-firstname">
-                <br/>
+                
                   <input type="text"
                     value={this.state.first_name}
                     onChange={this.update('first_name')}
@@ -68,7 +71,7 @@ class SignUpSessionForm extends React.Component {
                </div> 
 
                <div className="signup-email">
-                <br/>
+             
                   <input type="text"
                     value={this.state.email}
                     onChange={this.update('email')}
@@ -77,7 +80,7 @@ class SignUpSessionForm extends React.Component {
                </div>  
 
                <div className="signup-password">
-                <br/>
+               
                   <input type="password"
                     value={this.state.password}
                     onChange={this.update('password')}
@@ -86,7 +89,7 @@ class SignUpSessionForm extends React.Component {
                </div> 
 
                <div className="signup-zipcode">
-                <br/>
+             
                   <input type="text"
                     value={this.state.zip_code}
                     onChange={this.update('zip_code')}
@@ -102,8 +105,10 @@ class SignUpSessionForm extends React.Component {
                   />
                 </label>
                 <br/> */}
-                <br/>
+                
                 <input className="signup-session-submit" type="submit" value={this.props.formType} />
+                <p>Already on Yalp?</p>
+                <Link to="/login">Login</Link>
              
             </form>
           </div>
