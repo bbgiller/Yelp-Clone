@@ -8,22 +8,24 @@ import LogInFormContainer from './session_form/login_form_container';
 // import Header from './header/header'
 import Header from './header/header'
 import HeaderContainer from './header/header_container'
+import {AuthRoute} from '../util/route_util'
+import {withRouter} from 'react-router'
 
-const App = () => (
+const App = ({location}) => (
   <div>
       <header>
-        <HeaderContainer />
+        { (location.pathname=='/login' || location.pathname=='/signup') ? null : <HeaderContainer/> } 
        {/* <LogInFormContainer /> */}
        {/* <SignUpFormContainer /> */}
     </header>
       <Switch>
     
-    <Route path="/login" component={LogInFormContainer} />
-    <Route path="/signup" component={SignUpFormContainer} />
+    <AuthRoute path="/login" component={LogInFormContainer} />
+    <AuthRoute path="/signup" component={SignUpFormContainer} />
 
     </Switch>
 
   </div>
 );
 
-export default App;
+export default withRouter(App);

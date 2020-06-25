@@ -2,18 +2,37 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 
 const Header = ({ currentUser, logout }) => {
+    const searchBar = () => (
+      <div> 
+
+      <div className="searchbar-container">
+      <form className="searchbar">
+        <input type="text" value={null} placeholder="Find restaurants" className="searchbar-input"/>
+
+      </form>
+      </div>
+      </div>
+    );
+
     const sessionLinks = () => (
+      <div className="main-header">
       <nav className="login-signup">
-        <Link to="/login">Login</Link>
-        &nbsp;or&nbsp;
-        <Link to="/signup">Sign up!</Link>
+        <Link to="/login" className="login-link">Log In</Link>
+        &nbsp; &nbsp;
+        <Link to="/signup" className="login-link">Sign up</Link>
       </nav>
+       <div>{searchBar()}</div>
+       </div>
     );
     const personalGreeting = () => (
-      <hgroup className="header-group">
-        <h2 className="header-name">Hi, {currentUser.email}!</h2>
-        <button className="header-button" onClick={logout}>Log Out</button>
-      </hgroup>
+      <div>
+
+        <hgroup className="header-group">
+          <h2 className="header-name">Hi, {currentUser.email}!</h2>
+          <button className="header-button" onClick={logout}>Log Out</button>
+        </hgroup>
+        {/* <div>{searchBar()}</div> */}
+      </div>
     );
   
     return currentUser ? personalGreeting() : sessionLinks();
