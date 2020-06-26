@@ -1,0 +1,100 @@
+.form-container {
+    width:1000px;
+    max-width: 100%;
+    margin: 0 auto;
+    
+ 
+ }
+ 
+ .login-form-box .form-container {
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+     flex-wrap: wrap;
+ 
+ }
+ .signup-form-box .form-container {
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+     flex-wrap: wrap;
+ 
+ }
+ 
+ .login-form-box {
+     display: inline-block;
+     padding-top: 370px;
+     /* padding-left: 112px; */
+     /* justify-content: center; */
+     background-color: white;
+     /* width: 400px;
+     height: 400px; */
+     /* border: 1px solid black ; */
+     
+ }
+ 
+ .signup-form-box {
+     display: inline-block;
+     padding-top: 370px;
+     /* padding-left: 112px; */
+     /* justify-content: center; */
+     background-color: white;
+     /* width: 400px;
+     height: 400px; */
+     /* border: 1px solid black ; */
+     
+ }
+ .name-container {
+    display: flex;
+    justify-content: space-between ;
+ }
+ 
+ .login-email, .login-password,  .signup-email,
+ .signup-password, .signup-zipcode {
+    
+     width: 300px;
+     height: 30px;
+     border: 1px solid black;
+     border-radius: 3px;
+     vertical-align: text-bottom;
+ }
+ .signup-firstname, .signup-lastname {
+     width: 147px;
+     height: 30px;
+     border: 1px solid black;
+     border-radius: 3px;
+     vertical-align: text-bottom;
+ }
+ 
+ 
+ .login-session-submit, .signup-session-submit {
+     font-size: 22px;
+     text-align: center;
+     width:300px;
+     height: 44px;
+     color: white;
+     background: #D32323;
+     border-radius: 3px;
+ }
+
+ .demo-button {
+    display: flex;
+    position: relative;
+    font-size: 22px;
+    text-align: center;
+    width:300px;
+    height: 44px;
+    color: white;
+    background: maroon;
+    border-radius: 3px;
+    top: 100px;
+}
+.demo-button:hover {
+    filter: brightness(105%);
+}
+.login-session-submit:hover {
+    filter: brightness(105%);
+}
+.signup-.signup-session-submit {
+    filter: brightness(105%);
+}

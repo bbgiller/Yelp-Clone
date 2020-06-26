@@ -1,11 +1,15 @@
 import React from 'react';
-import {Link} from 'react-router-dom'
+import {Link} from 'react-router-dom';
+import {login} from '../../actions/session_actions';
+import configureStore from '../../store/store';
 
 class LoginSessionForm extends React.Component {
     constructor(props) {
         super(props);
         this.state = {email: '', password: ''};
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.handleDemo = this.handleDemo.bind(this);
+        // this.store = configureStore()
     }
 
     update(field) {
@@ -18,17 +22,22 @@ class LoginSessionForm extends React.Component {
         this.props.processForm(user);
     }
 
-    // renderErrors() {
-    //     return(
-    //       <ul>
-    //         {this.props.errors.map((error, i) => (
-    //           <li key={`error-${i}`}>
-    //             {error}
-    //           </li>
-    //         ))}
-    //       </ul>
-    //     );
-    // }
+    handleDemo() {
+      this.setState({email:'arthurmorgan@gmail.com',password:'123456'})
+      console.log('demo test')
+    }
+
+    renderErrors() {
+        return(
+          <ul>
+            {this.props.errors.map((error, i) => (
+              <li key={`error-${i}`}>
+                {error}
+              </li>
+            ))}
+          </ul>
+        );
+    }
 
     render() {
         return (
@@ -38,7 +47,7 @@ class LoginSessionForm extends React.Component {
          
 
           <div className="session-header">
-            <Link to="/">Yalp</Link>
+          <Link to="/">Yalp</Link>
           </div>
         
 
@@ -50,7 +59,7 @@ class LoginSessionForm extends React.Component {
               Sign into Yalp
               <br/>
               
-              {/* {this.renderErrors()} */}
+              {this.renderErrors()}
               <div className="login-email">
                 
              
@@ -72,6 +81,7 @@ class LoginSessionForm extends React.Component {
                 <br/>
                 <br/>
                 <input className="login-session-submit" type="submit" value={this.props.formType} />
+                <button className="demo-button" onClick={this.handleDemo}>Demo</button>
                 <p>New to Yalp?</p>
                 <Link to="/signup">Sign Up</Link>
               
