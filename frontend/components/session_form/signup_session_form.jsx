@@ -37,7 +37,7 @@ class SignUpSessionForm extends React.Component {
 
 
         <div className="session-header">
-            <h1>Yalp</h1>
+            <Link to="/">Yalp</Link>
 
         </div>  
 
