@@ -6,6 +6,11 @@ class SignUpSessionForm extends React.Component {
         super(props);
         this.state = {email: '', password: '',first_name:'', last_name:'',zip_code:'' };
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.handleRemoveErrors = this.handleRemoveErrors.bind(this);
+    }
+
+    componentDidMount() {
+      this.handleRemoveErrors()
     }
 
     update(field) {
@@ -17,6 +22,10 @@ class SignUpSessionForm extends React.Component {
         e.preventDefault();
         const user = Object.assign({}, this.state);
         this.props.processForm(user);
+    }
+
+    handleRemoveErrors() {
+      this.props.removeErrors()
     }
 
     renderErrors() {
@@ -111,7 +120,7 @@ class SignUpSessionForm extends React.Component {
                 <div className="below-form-signup">
 
                 <p className="already">Already on Yalp?</p>
-                <Link to="/login" className="bottom-login">Login</Link>
+                <Link to="/login" className="bottom-login" onClick={this.handleRemoveErrors}>Login</Link>
 
                 </div>
              

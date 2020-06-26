@@ -10,6 +10,10 @@ class LoginSessionForm extends React.Component {
         this.handleSubmit = this.handleSubmit.bind(this);
         this.handleDemo = this.handleDemo.bind(this);
         // this.store = configureStore()
+        this.handleRemoveErrors = this.handleRemoveErrors.bind(this);
+    }
+    componentDidMount() {
+      this.handleRemoveErrors()
     }
 
     update(field) {
@@ -23,8 +27,12 @@ class LoginSessionForm extends React.Component {
     }
 
     handleDemo() {
-      this.setState({email:'arthurmorgan@gmail.com',password:'123456'})
-      console.log('demo test')
+      this.setState({email:'arthurmorgan@gmail.com', password:'123456'})
+      
+    }
+
+    handleRemoveErrors() {
+      this.props.removeErrors()
     }
 
     renderErrors() {
@@ -50,7 +58,7 @@ class LoginSessionForm extends React.Component {
           <Link to="/">Yalp</Link>
           </div>
         
-
+          <div className="form-and-image">
             <div className="image" ></div>
 
            
@@ -86,8 +94,9 @@ class LoginSessionForm extends React.Component {
             </form>
                 <div className="below-form-login">
                 <p>New to Yalp?</p>
-                <Link to="/signup" className="bottom-login">Sign Up</Link>
+                <Link to="/signup" className="bottom-login" onClick={this.handleRemoveErrors}>Sign Up</Link>
 
+                </div>
                 </div>
           </div>
           </div>
