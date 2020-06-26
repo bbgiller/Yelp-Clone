@@ -13,13 +13,8 @@ import {withRouter} from 'react-router'
 
 const App = ({location}) => (
   <div>
-      <header>
-        { (location.pathname=='/login' || location.pathname=='/signup') ? null : <HeaderContainer/> } 
-       {/* <LogInFormContainer /> */}
-       {/* <SignUpFormContainer /> */}
-    </header>
       <Switch>
-    
+      <Route exact path="/" component={HeaderContainer}/>
     <AuthRoute path="/login" component={LogInFormContainer} />
     <AuthRoute path="/signup" component={SignUpFormContainer} />
 

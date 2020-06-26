@@ -25,8 +25,8 @@ const Header = ({ currentUser, logout }) => {
        </div>
     );
     const personalGreeting = () => (
-      <div>
-
+      <div className="main-header">
+        
         <hgroup className="header-group">
           <h2 className="header-name">Hi, {currentUser.email}!</h2>
           <button className="header-button" onClick={logout}>Log Out</button>
