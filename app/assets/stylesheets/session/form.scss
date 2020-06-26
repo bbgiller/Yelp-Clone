@@ -23,7 +23,9 @@
  
  .login-form-box {
      display: inline-block;
-     padding-top: 370px;
+     position: relative;
+     transform: translate(50%);
+     padding-top: 250px;
      /* padding-left: 112px; */
      /* justify-content: center; */
      background-color: white;
@@ -35,7 +37,9 @@
  
  .signup-form-box {
      display: inline-block;
-     padding-top: 370px;
+     position: relative;
+     transform: translate(70%);
+     padding-top: 250px;
      /* padding-left: 112px; */
      /* justify-content: center; */
      background-color: white;
@@ -57,6 +61,7 @@
      border: 1px solid black;
      border-radius: 3px;
      vertical-align: text-bottom;
+     margin-bottom: 10px;
  }
  .signup-firstname, .signup-lastname {
      width: 147px;
@@ -64,6 +69,7 @@
      border: 1px solid black;
      border-radius: 3px;
      vertical-align: text-bottom;
+     margin-bottom: 10px;
  }
  
  
@@ -77,9 +83,11 @@
      border-radius: 3px;
  }
 
+
  .demo-button {
     display: flex;
     position: relative;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 22px;
     text-align: center;
     width:300px;
@@ -87,7 +95,8 @@
     color: white;
     background: maroon;
     border-radius: 3px;
-    top: 100px;
+    margin-top: 10px;
+    justify-content: space-around;
 }
 .demo-button:hover {
     filter: brightness(105%);
@@ -95,6 +104,50 @@
 .login-session-submit:hover {
     filter: brightness(105%);
 }
-.signup-.signup-session-submit {
+.signup-session-submit:hover {
     filter: brightness(105%);
+}
+.signup-text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #D32323;
+    transform: translate(20%);
+}
+.already {
+    transform: translate(65%);
+    
+}
+.bottom-login {
+    color: #0073BB;
+}
+.bottom-login:hover {
+    text-decoration: underline;
+}
+
+.below-form-signup {
+    font-family: Arial, Helvetica, sans-serif;
+    transform: translate(20%);
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 12px;
+}
+
+.below-form-login {
+    width: 150px;
+    font-family: Arial, Helvetica, sans-serif;
+    transform: translate(210%);
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 12px;
+}
+
+.login-text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #D32323;
+    transform: translate(20%);
 }

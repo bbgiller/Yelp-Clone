@@ -56,8 +56,8 @@ class LoginSessionForm extends React.Component {
            
           <div className="form-container">
             <form onSubmit={this.handleSubmit} className="login-form-box">
-              Sign into Yalp
-              <br/>
+              <h2 className="login-text">Sign into Yalp</h2>
+              
               
               {this.renderErrors()}
               <div className="login-email">
@@ -70,7 +70,7 @@ class LoginSessionForm extends React.Component {
                     placeholder="Email"
                   />
                 </div>
-                <br/>
+               
                 
                   <input type="password"
                     value={this.state.password}
@@ -78,14 +78,17 @@ class LoginSessionForm extends React.Component {
                     className="login-password"
                     placeholder="Password"
                   />
+                
                 <br/>
-                <br/>
-                <input className="login-session-submit" type="submit" value={this.props.formType} />
+                <button className="login-session-submit" type="submit" value={this.props.formType}>Sign In</button>
                 <button className="demo-button" onClick={this.handleDemo}>Demo</button>
-                <p>New to Yalp?</p>
-                <Link to="/signup">Sign Up</Link>
               
             </form>
+                <div className="below-form-login">
+                <p>New to Yalp?</p>
+                <Link to="/signup" className="bottom-login">Sign Up</Link>
+
+                </div>
           </div>
           </div>
         );

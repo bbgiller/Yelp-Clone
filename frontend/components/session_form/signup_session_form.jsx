@@ -46,7 +46,7 @@ class SignUpSessionForm extends React.Component {
             </div>
           <div className="form-container">
             <form onSubmit={this.handleSubmit} className="signup-form-box">
-              Signup for Yalp
+              <h2 className="signup-text">Sign Up for Yalp</h2>
          
               {this.renderErrors()}
 
@@ -106,9 +106,13 @@ class SignUpSessionForm extends React.Component {
                 </label>
                 <br/> */}
                 
-                <input className="signup-session-submit" type="submit" value={this.props.formType} />
-                <p>Already on Yalp?</p>
-                <Link to="/login">Login</Link>
+                <button className="signup-session-submit" type="submit" value={this.props.formType}>Sign Up</button>
+                <div className="below-form-signup">
+
+                <p className="already">Already on Yalp?</p>
+                <Link to="/login" className="bottom-login">Login</Link>
+
+                </div>
              
             </form>
           </div>
