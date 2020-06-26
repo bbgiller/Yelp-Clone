@@ -40,6 +40,11 @@ class LoginSessionForm extends React.Component {
           <div className="session-header">
             <Link to="/">Yalp</Link>
           </div>
+        
+
+            <div className="image" ></div>
+
+           
           <div className="form-container">
             <form onSubmit={this.handleSubmit} className="login-form-box">
               Sign into Yalp

@@ -36,12 +36,12 @@ class SignUpSessionForm extends React.Component {
 
 
 
-        {/* <div className="session-header">
+        <div className="session-header">
             <h1>Yalp</h1>
 
-        </div>   */}
+        </div>  
 
-            <div className="image">
+            <div className="image" >
 
             </div>
           <div className="form-container">

@@ -113,9 +113,16 @@
    justify-content: space-between ;
 }
 
-.login-email, .login-password, .signup-firstname, .signup-lastname, .signup-email,
+.login-email, .login-password,  .signup-email,
 .signup-password, .signup-zipcode {
    
+    width: 300px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 3px;
+    vertical-align: text-bottom;
+}
+.signup-firstname, .signup-lastname {
     width: 300px;
     height: 30px;
     border: 1px solid black;
@@ -135,9 +142,15 @@
 }
 
 .image {
-    border:1px solid black;
-    width: 500px;
-    height: 500px;
+    display: flex;
+    position: relative;
+    float: right;
+    transform: translate(-70%);
+    margin: 0px;
+    // border:1px solid black;
+    top:200px;
+    width: 380px;
+    height: 344px;
     background: image_url('signup_illustration.png');
     background-size: cover;
 }
