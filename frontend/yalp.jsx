@@ -4,6 +4,8 @@ import {signup, login, logout} from './actions/session_actions';
 import configureStore from './store/store';
 import Root from './components/root';
 
+import {fetchBusinesses} from './actions/business_actions'
+
 const store = configureStore()
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -23,6 +25,8 @@ document.addEventListener('DOMContentLoaded', () => {
   }
     const root = document.getElementById('root');
     //TESTING START
+    window.fetchBusinesses = fetchBusinesses;
+    // window.fetchBusiness = fetchBusiness;
     window.signup = signup;
     window.login = login;
     window.logout = logout;

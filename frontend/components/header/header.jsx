@@ -19,7 +19,7 @@ const Header = ({ currentUser, logout }) => {
       <nav className="login-signup">
         <Link to="/login" className="login-link">Log In</Link>
         &nbsp; &nbsp;
-        <Link to="/signup" className="login-link">Sign up</Link>
+        <Link to="/signup" className="signup-link">Sign up</Link>
       </nav>
        <div>{searchBar()}</div>
        </div>

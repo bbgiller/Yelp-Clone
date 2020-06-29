@@ -67,7 +67,7 @@ class LoginSessionForm extends React.Component {
               <h2 className="login-text">Sign into Yalp</h2>
               
               
-              {this.renderErrors()}
+              <div className="session-errors">{this.renderErrors()}</div>
               <div className="login-email">
                 
              

@@ -62,14 +62,23 @@
      border-radius: 3px;
      vertical-align: text-bottom;
      margin-bottom: 10px;
+     padding-left: 15px;
+    align-items: center;
+    /* box-shadow: 0 0 black; */
+    display: flex;
  }
  .signup-firstname, .signup-lastname {
-     width: 147px;
+     width: 140px;
      height: 30px;
      border: 1px solid black;
      border-radius: 3px;
      vertical-align: text-bottom;
      margin-bottom: 10px;
+     padding-left: 15px;
+    align-items: center;
+    margin-right: 3px;
+    /* box-shadow: 0 0 black; */
+    display: flex;
  }
  
  
@@ -81,6 +90,11 @@
      color: white;
      background: #D32323;
      border-radius: 3px;
+ }
+
+ .signup-session-submit {
+    // margin-left: 10px;
+    width: 320px;
  }
 
 
@@ -97,6 +111,7 @@
     border-radius: 3px;
     margin-top: 10px;
     justify-content: space-around;
+    align-items: center;
 }
 .demo-button:hover {
     filter: brightness(105%);
@@ -155,3 +170,8 @@
 // .form-and-image {
 //     display: flex;
 // }
+
+.session-errors {
+    color: #D32323;
+    font-weight: bold;
+}

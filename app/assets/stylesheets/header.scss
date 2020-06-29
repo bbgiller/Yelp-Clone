@@ -1,20 +1,42 @@
 .main-header{
-    background-color: #D32323;
+    background-color: #131111;
     color:white;
     text-align: center;
     height:600px;
 }
 
 .login-signup {
+    padding-top: 30px;
     display:flex;
     position: relative;
-    transform: translate(65%)
+    transform: translate(65%);
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold ;
 }
 
 .login-link {
-    font-size: 14px;
-    font-weight: bold ;
+    
+    
+    padding-top: 15px;
+    padding-left: 25px;
+    padding-right: 15px;
 }
-.login-link {
-    font-size: 14px;
+.login-link:hover {
+    // text-decoration: underline;
+    border-bottom: 2px solid white;
+}
+
+.signup-link {
+    border: 2px solid white;
+    border-radius: 3px;
+    border-spacing: 20px;
+    height: 26px;
+    width: 104px;
+    text-align: center;
+    padding-top: 13px;
+}
+.signup-link:hover {
+    background-color: white;
+    color: darkgrey;
 }

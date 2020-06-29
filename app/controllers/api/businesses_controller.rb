@@ -1,5 +1,8 @@
 class Api::BusinessesController < ApplicationController
-
+    def index
+        @businesses = Business.all 
+        render "/api/businesses/index"
+    end
 
 
     def show
@@ -9,6 +12,6 @@ class Api::BusinessesController < ApplicationController
     private
 
     def business_params
-        params.require(:business).permit(:name,:address,:category,:website,:phone_number)
+        params.require(:business).permit(:name,:address,:category,:website,:phone_number,:longitude, :latitude)
     end
 end
