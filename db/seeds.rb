@@ -23,9 +23,19 @@
     first_name: 'Arthur', last_name: 'Morgan', zip_code:'1000'}])
 
 Business.create([{name: 'Blue Barn', 
-   address: '2237 Polk Street San Francisco CA 94109',
+   address: '2237 Polk Street, San Francisco, CA 94109',
    category:'Restaurant',
    website:'http://www.bluebarngourmet.com',
    phone_number: '415-655-9438',
    latitude: 37.797673,
    longitude: -122.422318}])
+
+Business.create([{name: 'Purple Rice', 
+   address: '509 Haight St, San Francisco, CA 94117',
+   category:'Restaurant',
+   website:'https://purplerice.menu11.com/',
+   phone_number: '415-932-6257',
+   latitude: 37.772116,
+   longitude: -122.430798}])
+
+   

@@ -1,5 +1,6 @@
 class Api::BusinessesController < ApplicationController
     def index
+        # debugger
         @businesses = Business.all 
         render "/api/businesses/index"
     end

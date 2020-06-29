@@ -5,7 +5,11 @@ import { connect } from 'react-redux'
 
 
 export const mapStateToProps = state => ({
-    businesses: Object.values(state.entities.businesses)
+    
+    
+      businesses: Object.values(state.entities.businesses) 
+    
+    // businesses: state.entities.businesses 
 })
 
 export const mapDispatchToProps = dispatch => ({

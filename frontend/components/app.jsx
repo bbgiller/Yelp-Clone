@@ -15,7 +15,7 @@ import BusinessIndexContainer from '../components/businesses/business_index_cont
 const App = ({location}) => (
   <div>
       <Switch>
-      <Route exact path="/" component={HeaderContainer}/>
+      <Route exact path="/" component={BusinessIndexContainer}/>
     <AuthRoute path="/login" component={LogInFormContainer} />
     <AuthRoute path="/signup" component={SignUpFormContainer} />
     <Route path='*' component={HeaderContainer}/>
