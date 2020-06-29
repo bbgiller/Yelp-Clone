@@ -11,7 +11,8 @@ class BusinessIndex extends React.Component {
     }
 
     render() {
-        // debugger
+        
+        
         let businesses = this.state.map(business => (
             <BusinessIndexItem
               business={business}

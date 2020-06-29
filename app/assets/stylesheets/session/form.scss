@@ -67,6 +67,9 @@
     /* box-shadow: 0 0 black; */
     display: flex;
  }
+ .login-email, .login-password {
+     width: 283px;
+ }
  .signup-firstname, .signup-lastname {
      width: 140px;
      height: 30px;
