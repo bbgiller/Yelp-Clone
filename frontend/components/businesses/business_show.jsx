@@ -23,7 +23,7 @@ class BusinessShow extends React.Component {
             </div>
 
             <div className="show-pictures">
-                <h1>Pictures go here</h1>
+                {/* <h1>Pictures go here</h1> */}
             </div>
 
             <div className="show-head">
@@ -33,28 +33,36 @@ class BusinessShow extends React.Component {
             
             <div className="show-side-information-container">
                 <div className="show-side-information">
-                    <a href={`${this.props.business.website}`} className="show-business-website">{this.props.business.website}</a>
-                    <p className="show-business-phonenumber">{this.props.business.phone_number}</p>
+                    <a href={`${this.props.business.website}`} className="show-business-website"><p className="website-icon">↳</p> {this.props.business.website}</a>
+                    <p className="show-business-phonenumber"><p className="phone-icon" >✆</p> {this.props.business.phone_number}</p>
                 </div>
             </div>
 
-            <div className="hours-container">
-                <ul className="hours">
-                    
-                    <li>Mon {this.props.business.weekday_hours}</li>
-                    <li>Tue {this.props.business.weekday_hours}</li>
-                    <li>Wed {this.props.business.weekday_hours}</li>
-                    <li>Thu {this.props.business.weekday_hours}</li>
-                    <li>Fri {this.props.business.weekday_hours}</li>
-                    <li>Sat {this.props.business.weekend_hours}</li>
-                    <li>Sun {this.props.business.weekend_hours}</li>
-                
-                </ul>
-            </div>
+            <div className="map-hours-container">
 
-            <div className="show-map" >
-                <h2>Location</h2>
-                {<BusinessMap/>}
+                <div className="hours-container">
+                    <ul className="hours">
+                        
+                        <li>Mon {this.props.business.weekday_hours}</li>
+                        <li>Tue {this.props.business.weekday_hours}</li>
+                        <li>Wed {this.props.business.weekday_hours}</li>
+                        <li>Thu {this.props.business.weekday_hours}</li>
+                        <li>Fri {this.props.business.weekday_hours}</li>
+                        <li>Sat {this.props.business.weekend_hours}</li>
+                        <li>Sun {this.props.business.weekend_hours}</li>
+                    
+                    </ul>
+                </div>
+
+                <div className="show-map" >
+                    <h2>Location & Hours</h2>
+                    {<BusinessMap/>}
+                </div>
+
+                <div className="show-address">
+                    {this.props.business.address}
+                </div>
+
             </div>
 
            

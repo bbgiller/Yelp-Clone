@@ -32,7 +32,7 @@ const Header = ({ currentUser, logout }) => {
           <h2 className="header-name">Hi, {currentUser.email}!</h2>
           <button className="header-button" onClick={logout}>Log Out</button>
         </hgroup>
-        {/* <div>{searchBar()}</div> */}
+        <div>{searchBar()}</div>
       </div>
     );
   
