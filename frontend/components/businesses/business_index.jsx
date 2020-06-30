@@ -1,5 +1,6 @@
 import React from 'react';
 import BusinessIndexItem from './business_index_item'
+import BusinessMap from './business_map';
 
 class BusinessIndex extends React.Component {
     constructor(props) {
@@ -21,7 +22,10 @@ class BusinessIndex extends React.Component {
               key={business.id}
             />))
         return (
+            <div>
             <div>{bus}</div>
+        <div>{<BusinessMap />}</div>
+        </div>
         )
     }
 }
