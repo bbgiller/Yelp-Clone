@@ -12,7 +12,7 @@ class BusinessMap extends React.Component {
     
         
         this.map = new google.maps.Map(this.refs.map, mapOptions);
-        debugger
+        // debugger
       }
     
       render() {

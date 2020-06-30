@@ -1,9 +1,9 @@
 import React from 'react';
-
+import {Link} from 'react-router-dom'
 
 const BusinessIndexItem = (props) => (
     <div>
-    <h1>{props.business.name}</h1>
+    <Link to={`/businesses/${props.business.id}`} >{props.business.name}</Link>
     <p>{props.business.address}</p>
     <p>Latitude:{props.business.latitude}</p>
     <p>Longitude:{props.business.longitude}</p>

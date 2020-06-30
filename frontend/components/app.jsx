@@ -11,13 +11,15 @@ import HeaderContainer from './header/header_container'
 import {AuthRoute} from '../util/route_util'
 import {withRouter} from 'react-router'
 import BusinessIndexContainer from '../components/businesses/business_index_container'
+import BusinessShowContainer from '../components/businesses/business_show_container'
 
 const App = ({location}) => (
   <div>
       <Switch>
-      <Route exact path="/" component={BusinessIndexContainer}/>
+      <Route exact path="/businesses" component={BusinessIndexContainer}/>
     <AuthRoute path="/login" component={LogInFormContainer} />
     <AuthRoute path="/signup" component={SignUpFormContainer} />
+    <Route path="/businesses/:businessId" component={BusinessShowContainer} />
     <Route path='*' component={HeaderContainer}/>
 
     </Switch>
