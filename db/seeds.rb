@@ -28,7 +28,9 @@ Business.create([{name: 'Blue Barn',
    website:'http://www.bluebarngourmet.com',
    phone_number: '415-655-9438',
    latitude: 37.797673,
-   longitude: -122.422318}])
+   longitude: -122.422318,
+   weekday_hours: '11:00 am - 8:00 pm',
+   weekend_hours: '11:00 am - 8:00 pm'}])
 
 Business.create([{name: 'Purple Rice', 
    address: '509 Haight St, San Francisco, CA 94117',
@@ -36,6 +38,8 @@ Business.create([{name: 'Purple Rice',
    website:'https://purplerice.menu11.com/',
    phone_number: '415-932-6257',
    latitude: 37.772116,
-   longitude: -122.430798}])
+   longitude: -122.430798,
+   weekday_hours: '4:30 pm - 9:30 pm',
+   weekend_hours: '4:30 pm - 9:30 pm'}])
 
    

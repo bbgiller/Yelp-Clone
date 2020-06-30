@@ -1,0 +1,58 @@
+.show-business-name {
+    font-size: 48px;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+}
+
+.show-business-category {
+    font-size: 16px;
+    color: #757280;
+}
+
+.show-map {
+    width: 300px;
+    height: 150px;
+}
+.show-header {
+    height:133px;
+    overflow: hidden;
+    // background-color: red;
+}
+
+.show-side-information {
+    color: #2b273c;
+    height:100px;
+    width: 381px;
+    border: 1px solid #EEEEEF;
+    font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+    text-align: center;
+}
+.show-side-information-container {
+    display: flex;
+    justify-content: space-around;
+    transform: translate(25%,-50%);
+
+}
+
+.show-pictures {
+    height: 265px;
+    width: 100%;
+    border: 1px solid black;
+}
+
+.show-business-website {
+    padding-top: 20px;
+    border-bottom: 1px solid #EEEEEF;
+    margin-bottom: 10px;
+    padding-bottom: 30px;
+    
+}
+.show-business-phonenumber {
+    margin-top: 40px;
+    
+}
+
+.hours {
+    width:180px ;
+    border: 1px solid black;
+    list-style-type: none;
+}
