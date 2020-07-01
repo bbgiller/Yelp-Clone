@@ -4,13 +4,15 @@ import {Link} from 'react-router-dom';
 const Header = ({ currentUser, logout }) => {
     const searchBar = () => (
       <div> 
-
+      <Link to="/" className="header-logo">
+        Yalp
+      </Link>
       <div className="searchbar-container">
       <form className="searchbar">
         <input type="text" value={null} placeholder="Find restaurants" className="searchbar-input"/>
 
       </form>
-      <Link to="/businesses">All Businesses!</Link>
+      <Link to="/businesses" className="all-businesses-link">All Businesses!</Link>
       </div>
       </div>
     );
@@ -28,14 +30,15 @@ const Header = ({ currentUser, logout }) => {
     const personalGreeting = () => (
       <div className="main-header">
         
-        <hgroup className="header-group">
-          <h2 className="header-name">Hi, {currentUser.email}!</h2>
+        <hgroup className="login-signup">
+          <h2 className="header-name">Hi, {currentUser.email}!     </h2>
           <button className="header-button" onClick={logout}>Log Out</button>
         </hgroup>
         <div>{searchBar()}</div>
       </div>
     );
-  
+      
+    // debugger
     return currentUser ? personalGreeting() : sessionLinks();
   };
   

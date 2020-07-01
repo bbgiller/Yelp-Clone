@@ -18,6 +18,9 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+User.destroy_all
+
+Business.destroy_all
 
  User.create([{email: 'arthurmorgan@gmail.com', password: '123456', 
     first_name: 'Arthur', last_name: 'Morgan', zip_code:'1000'}])
@@ -41,5 +44,37 @@ Business.create([{name: 'Purple Rice',
    longitude: -122.430798,
    weekday_hours: '4:30 pm - 9:30 pm',
    weekend_hours: '4:30 pm - 9:30 pm'}])
+
+  Business.create([{name: 'Kilowatt', 
+   address: '3160 16th St, San Francisco, CA 94103',
+   category:'Bar',
+   website:'http://kilowattbar.com/',
+   phone_number: '415-861-2595',
+   latitude: 37.7650044,
+   longitude: -122.4254622,
+   weekday_hours: '5:00 pm - 2:00 am',
+   weekend_hours: '3:00 pm - 2:00 am'}])
+
+Business.create([{name: 'Ippudo', 
+   address: '18 Yerba Buena Ln, San Francisco, CA 94103',
+   category:'Restaurant',
+   website:'https://ippudo-us.com/',
+   phone_number: '(415) 348-1202',
+   latitude: 37.7861071,
+   longitude: -122.4067554,
+   weekday_hours: 'Closed',
+   weekend_hours: 'Closed'}])
+
+Business.create([{name: 'Wildseed', 
+   address: '2000 Union St, San Francisco, CA 94123',
+   category:'Restaurant',
+   website:'https://www.wildseedsf.com',
+   phone_number: '415-872-7350',
+   latitude: 37.7976301,
+   longitude: -122.4346291,
+   weekday_hours: '12:00 pm - 8:00 pm',
+   weekend_hours: '12:00 pm - 9:00 pm'}])
+
+   
 
    

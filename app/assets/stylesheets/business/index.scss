@@ -1,0 +1,26 @@
+// .business-index-item {
+//     border: 1px solid black;
+// }
+
+.business-index-item-box {
+    border: 1px solid black;
+    width:30%;
+    padding-top:20px;
+}
+
+.business-index-item-name {
+    font-weight: bold;
+    padding-bottom: 20px;
+    display: flex;
+}
+
+.business-index-map {
+    display: flex;
+    transform: translate(50%,-180%);
+}
+
+.business-index-item {
+    font-size: 25px;
+    transform: translate(10%, 10%);
+}
+

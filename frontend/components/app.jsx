@@ -15,9 +15,10 @@ import BusinessShowContainer from '../components/businesses/business_show_contai
 
 const App = ({location}) => (
   <div>
+   
       <Switch>
       <Route exact path="/businesses" component={BusinessIndexContainer}/>
-    <AuthRoute path="/login" component={LogInFormContainer} />
+      <AuthRoute path="/login" component={LogInFormContainer} />
     <AuthRoute path="/signup" component={SignUpFormContainer} />
     <Route path="/businesses/:businessId" component={BusinessShowContainer} />
     <Route path='*' component={HeaderContainer}/>

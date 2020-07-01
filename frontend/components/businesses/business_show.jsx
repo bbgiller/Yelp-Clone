@@ -1,6 +1,6 @@
 import React from 'react';
 import BusinessMap from './business_map';
-import Header from '../header/header'
+import HeaderContainer from '../header/header_container'
 
 class BusinessShow extends React.Component {
     constructor(props) {
@@ -9,17 +9,21 @@ class BusinessShow extends React.Component {
     }
 
     componentDidMount() {
+        // debugger
         this.props.fetchBusiness(this.props.match.params.businessId)
     }
 
     render() {
         // debugger
+        if (!this.props.business) {
+            return null;
+        }
         const weekdays = ['Mon', 'Tue', 'Wed', 'Thu','Fri'];
         
         return(
         <div>
             <div className="show-header">
-                {<Header/>}
+                {<HeaderContainer/>}
             </div>
 
             <div className="show-pictures">

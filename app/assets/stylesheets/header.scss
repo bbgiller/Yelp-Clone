@@ -40,3 +40,30 @@
     background-color: white;
     color: darkgrey;
 }
+
+.header-name {
+    font-size: 14px;
+}
+
+.searchbar-input {
+    width: 400px;
+    background-color: white;
+    height: 25px;
+    border-radius: 5px;
+    margin-top: 10px;
+    transform: translate(0px,-100%);
+}
+
+.header-logo {
+    display: flex;
+    transform: translate(5%);
+    font-size: 40px;
+    width: 30px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.all-businesses-link{
+    display: flex;
+    transform: translate(47%, -100%);
+}
