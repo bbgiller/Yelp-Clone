@@ -5,11 +5,11 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+* Background
 
-* System dependencies
+* Technologies
 
-* Configuration
+* Features
 
 * Database creation
 
