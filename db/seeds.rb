@@ -18,6 +18,9 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+require 'open-uri';
+
+
 User.destroy_all
 
 Business.destroy_all
@@ -25,7 +28,7 @@ Business.destroy_all
  User.create([{email: 'arthurmorgan@gmail.com', password: '123456', 
     first_name: 'Arthur', last_name: 'Morgan', zip_code:'1000'}])
 
-Business.create([{name: 'Blue Barn', 
+blue_barn = Business.create([{name: 'Blue Barn', 
    address: '2237 Polk Street, San Francisco, CA 94109',
    category:'Restaurant',
    website:'http://www.bluebarngourmet.com',
@@ -34,6 +37,10 @@ Business.create([{name: 'Blue Barn',
    longitude: -122.422318,
    weekday_hours: '11:00 am - 8:00 pm',
    weekend_hours: '11:00 am - 8:00 pm'}])
+
+  file = open('https://yalp-dev.s3-us-west-1.amazonaws.com/blue_barn_1.jpeg')
+
+  blue_barn.photo.attach(io: file, filename:'blue_barn_1.jpeg')
 
 Business.create([{name: 'Purple Rice', 
    address: '509 Haight St, San Francisco, CA 94117',
