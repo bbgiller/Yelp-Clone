@@ -28,7 +28,7 @@ Business.destroy_all
  User.create([{email: 'arthurmorgan@gmail.com', password: '123456', 
     first_name: 'Arthur', last_name: 'Morgan', zip_code:'1000'}])
 
-blue_barn = Business.create([{name: 'Blue Barn', 
+blue_barn = Business.create({name: 'Blue Barn', 
    address: '2237 Polk Street, San Francisco, CA 94109',
    category:'Restaurant',
    website:'http://www.bluebarngourmet.com',
@@ -36,11 +36,11 @@ blue_barn = Business.create([{name: 'Blue Barn',
    latitude: 37.797673,
    longitude: -122.422318,
    weekday_hours: '11:00 am - 8:00 pm',
-   weekend_hours: '11:00 am - 8:00 pm'}])
+   weekend_hours: '11:00 am - 8:00 pm'})
 
-  file = open('https://yalp-dev.s3-us-west-1.amazonaws.com/blue_barn_1.jpeg')
+file = open('https://yalp-seeds.s3-us-west-1.amazonaws.com/blue_barn_1.jpeg')
 
-  blue_barn.photo.attach(io: file, filename:'blue_barn_1.jpeg')
+blue_barn.photos.attach(io: file, filename:'blue_barn_1.jpeg')
 
 Business.create([{name: 'Purple Rice', 
    address: '509 Haight St, San Francisco, CA 94117',

@@ -26,7 +26,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'bcrypt', '~> 3.1.7'
 gem 'figaro'
 gem 'jquery-rails'
-gem 'open-uri'
+# gem 'open-uri'
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
