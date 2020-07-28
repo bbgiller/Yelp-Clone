@@ -28,6 +28,7 @@ Business.destroy_all
  User.create([{email: 'arthurmorgan@gmail.com', password: '123456', 
     first_name: 'Arthur', last_name: 'Morgan', zip_code:'1000'}])
 
+#blue_barn
 blue_barn = Business.create({name: 'Blue Barn', 
    address: '2237 Polk Street, San Francisco, CA 94109',
    category:'Restaurant',
@@ -38,11 +39,12 @@ blue_barn = Business.create({name: 'Blue Barn',
    weekday_hours: '11:00 am - 8:00 pm',
    weekend_hours: '11:00 am - 8:00 pm'})
 
-file = open('https://yalp-seeds.s3-us-west-1.amazonaws.com/blue_barn_1.jpeg')
+blue_barn_1 = open('https://yalp-seeds.s3-us-west-1.amazonaws.com/blue_barn_1.jpeg')
 
-blue_barn.photos.attach(io: file, filename:'blue_barn_1.jpeg')
+blue_barn.photos.attach(io: blue_barn_1, filename:'blue_barn_1.jpeg')
 
-Business.create([{name: 'Purple Rice', 
+#purple rice
+purple_rice = Business.create({name: 'Purple Rice', 
    address: '509 Haight St, San Francisco, CA 94117',
    category:'Restaurant',
    website:'https://purplerice.menu11.com/',
@@ -50,9 +52,14 @@ Business.create([{name: 'Purple Rice',
    latitude: 37.772116,
    longitude: -122.430798,
    weekday_hours: '4:30 pm - 9:30 pm',
-   weekend_hours: '4:30 pm - 9:30 pm'}])
+   weekend_hours: '4:30 pm - 9:30 pm'})
 
-  Business.create([{name: 'Kilowatt', 
+purple_rice_1 = open('https://yalp-seeds.s3-us-west-1.amazonaws.com/purplerice1.jpg')
+
+purple_rice.photos.attach(io: purple_rice_1, filename:'purplerice1.jpeg')
+
+#Kilowatt
+kilowatt = Business.create({name: 'Kilowatt', 
    address: '3160 16th St, San Francisco, CA 94103',
    category:'Bar',
    website:'http://kilowattbar.com/',
@@ -60,9 +67,14 @@ Business.create([{name: 'Purple Rice',
    latitude: 37.7650044,
    longitude: -122.4254622,
    weekday_hours: '5:00 pm - 2:00 am',
-   weekend_hours: '3:00 pm - 2:00 am'}])
+   weekend_hours: '3:00 pm - 2:00 am'})
 
-Business.create([{name: 'Ippudo', 
+kilowatt_1 = open('https://yalp-seeds.s3-us-west-1.amazonaws.com/kilowatt1.jpg')
+kilowatt.photos.attach(io: kilowatt_1, filename:'kilowatt1.jpeg')
+
+#Ippudo
+
+ippudo = Business.create({name: 'Ippudo', 
    address: '18 Yerba Buena Ln, San Francisco, CA 94103',
    category:'Restaurant',
    website:'https://ippudo-us.com/',
@@ -70,9 +82,14 @@ Business.create([{name: 'Ippudo',
    latitude: 37.7861071,
    longitude: -122.4067554,
    weekday_hours: 'Closed',
-   weekend_hours: 'Closed'}])
+   weekend_hours: 'Closed'})
 
-Business.create([{name: 'Wildseed', 
+   ippudo_1 = open('https://yalp-seeds.s3-us-west-1.amazonaws.com/ippudo1.jpg')
+   ippudo.photos.attach(io: ippudo_1, filename:'ippudo1.jpeg')
+
+#Wildseed
+
+wildseed = Business.create({name: 'Wildseed', 
    address: '2000 Union St, San Francisco, CA 94123',
    category:'Restaurant',
    website:'https://www.wildseedsf.com',
@@ -80,8 +97,10 @@ Business.create([{name: 'Wildseed',
    latitude: 37.7976301,
    longitude: -122.4346291,
    weekday_hours: '12:00 pm - 8:00 pm',
-   weekend_hours: '12:00 pm - 9:00 pm'}])
+   weekend_hours: '12:00 pm - 9:00 pm'})
 
+   wildseed_1 = open('https://yalp-seeds.s3-us-west-1.amazonaws.com/wildseed1.jpg')
+   wildseed.photos.attach(io: wildseed_1, filename:'wildseed1.jpeg')
    
 
    
