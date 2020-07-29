@@ -5,7 +5,7 @@ import { fetchBusiness } from '../../actions/business_actions'
 
 const mapStateToProps = (state, ownProps) => ({
     // debugger
-      business: state.entities.businesses[ownProps.match.params.businessId] 
+      business: state.entities.businesses[ownProps.match.params.businessId] || {}
      
 })
     

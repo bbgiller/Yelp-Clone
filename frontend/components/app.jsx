@@ -13,7 +13,7 @@ import {withRouter} from 'react-router'
 import BusinessIndexContainer from '../components/businesses/business_index_container'
 import BusinessShowContainer from '../components/businesses/business_show_container'
 
-const App = ({location}) => (
+const App = () => (
   <div>
    
       <Switch>

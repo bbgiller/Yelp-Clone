@@ -34,7 +34,8 @@
     font-size: 12px;
     display: inline;
     /* transform: translate(40%, -280%); */
-    /* margin-left: 30%; */
+    margin-left: 80%;
+    transform: translate(10px, -600%);
     float: right;
 }
 
@@ -44,5 +45,6 @@ img {
     height: 150px;
     margin-left: 5%;
     margin-bottom: 3%;
+    border-radius: 3%;
 
 }

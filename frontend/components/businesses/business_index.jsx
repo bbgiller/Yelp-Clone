@@ -17,15 +17,14 @@ class BusinessIndex extends React.Component {
     render() {
         
 
-        let bus = this.props.businesses.map((business, index) => (
-            <div>
+        let bus = this.props.businesses.map((business) => (
+         
 
-                {/* <div> {index} </div> */}
+                
                 <BusinessIndexItem
                   business={business}
                   key={business.id}
                 />
-            </div>
             ))
         return (
             <div>
@@ -33,7 +32,7 @@ class BusinessIndex extends React.Component {
                 {<HeaderContainer/>}
             </div>
             <div className="business-index-item">{bus}</div>
-        <div className="business-index-map">{<BusinessMap />}</div>
+        <div className="show-map">{<BusinessMap />}</div>
         </div>
         )
     }
