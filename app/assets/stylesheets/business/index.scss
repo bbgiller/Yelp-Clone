@@ -4,14 +4,16 @@
 
 .business-index-item-box {
     border: 1px solid black;
-    width:30%;
-    padding-top:20px;
+    width: 40%;
+    padding-top: 20px;
 }
 
 .business-index-item-name {
     font-weight: bold;
-    padding-bottom: 20px;
-    display: flex;
+    // padding-bottom: 20px;
+    display: inline;
+    vertical-align: top;
+    margin-left: 5%;
     font-size: 20px;
     font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
@@ -30,7 +32,17 @@
 .business-index-item-address {
     color: #757280;
     font-size: 12px;
-    display: flex;
-    transform: translate(40%,-280%);
+    display: inline;
+    /* transform: translate(40%, -280%); */
+    /* margin-left: 30%; */
+    float: right;
 }
 
+img {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    margin-left: 5%;
+    margin-bottom: 3%;
+
+}
