@@ -19,10 +19,10 @@
 }
 
 
-.business-index-map {
-    display: flex;
-    transform: translate(50%,-180%);
-}
+// .business-index-map {
+//     display: flex;
+//     transform: translate(50%,-180%);
+// }
 
 .business-index-item {
     font-size: 25px;
@@ -47,4 +47,18 @@ img {
     margin-bottom: 3%;
     border-radius: 3%;
 
+}
+
+.map-container {
+    height: 150px;
+    width: 300px;
+    border: 1px solid black;
+}
+
+.index-map > .map-container {
+    text-align: left;
+    width: 30%;
+    height: 1000px;
+    float: right;
+    transform: translate(0%, -102.2%);
 }

@@ -5,7 +5,7 @@ const Header = ({ currentUser, logout }) => {
     const searchBar = () => (
       <div> 
       <Link to="/" className="header-logo">
-        Yalp
+        yalp <p className="symbol">ꕤ</p>
       </Link>
       <div className="searchbar-container">
       <form className="searchbar">

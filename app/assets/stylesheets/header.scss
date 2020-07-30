@@ -1,8 +1,9 @@
 .main-header{
-    background-color: #d32323;
-    color:white;
+    background-color: white;
+    color: black;
     text-align: center;
-    height:600px;
+    height: 600px;
+    border: 1px solid #eeeeef
 }
 
 .login-signup {
@@ -18,27 +19,33 @@
 .login-link {
     
     
-    padding-top: 15px;
+    padding-top: 11px;
     padding-left: 25px;
-    padding-right: 15px;
+    padding-right: 25px;
+    color: #2b273c;
+    /* float: right; */
+    border: 1px solid #bbbac0;
 }
+
+
 .login-link:hover {
     // text-decoration: underline;
-    border-bottom: 2px solid white;
+    background-color: darkgray;
 }
 
 .signup-link {
-    border: 2px solid white;
+    background-color: #f43939;
     border-radius: 3px;
     border-spacing: 20px;
     height: 26px;
     width: 104px;
     text-align: center;
     padding-top: 13px;
+    color: white;
 }
 .signup-link:hover {
-    background-color: white;
-    color: darkgrey;
+    background-color: #fb1f1f;
+    color: white;
 }
 
 .header-name {
@@ -67,4 +74,7 @@
 .all-businesses-link{
     display: flex;
     transform: translate(47%, -100%);
+}
+.symbol {
+    color:red;
 }

@@ -60,7 +60,7 @@ class BusinessShow extends React.Component {
 
                 <div className="show-map" >
                     <h2>Location & Hours</h2>
-                    {<BusinessMap/>}
+                    {<BusinessMap businesses={[this.props.business]}/>}
                 </div>
 
                 <div className="show-address">

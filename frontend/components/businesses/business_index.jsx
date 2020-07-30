@@ -32,7 +32,7 @@ class BusinessIndex extends React.Component {
                 {<HeaderContainer/>}
             </div>
             <div className="business-index-item">{bus}</div>
-        <div className="show-map">{<BusinessMap />}</div>
+        <div className="index-map">{<BusinessMap businesses={this.props.businesses} />}</div>
         </div>
         )
     }
