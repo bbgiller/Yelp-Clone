@@ -17,10 +17,11 @@
     width: 300px;
     height: 150px;
 }
-.show-header {
+.show-header > .main-header {
     height:133px;
     overflow: hidden;
     border: 1px solid #eeeeef;
+    background-color: white;
 }
 
 
@@ -78,8 +79,9 @@
 }
 
 .hours-container {
-    transform: translate(17.5%, 130%);
+    transform: translate(198.5%, 40%);
     text-align: left;
+    position: fixed;
 }
 
 .hours {

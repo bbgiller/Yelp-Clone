@@ -1,9 +1,12 @@
 .main-header{
-    background-color: white;
+    background-color: black;
     color: black;
     text-align: center;
     height: 600px;
-    border: 1px solid #eeeeef
+    border: 1px solid #eeeeef;
+    background-image: url('breadbowl.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .login-signup {
