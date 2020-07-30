@@ -13,6 +13,8 @@ class BusinessShow extends React.Component {
         this.props.fetchBusiness(this.props.match.params.businessId)
     }
 
+    
+
     render() {
         // debugger
         if (!this.props.business) {
@@ -27,7 +29,7 @@ class BusinessShow extends React.Component {
             </div>
 
             <div className="show-pictures">
-            <img src={this.props.business.photoUrls ? this.props.business.photoUrls[0] : null} className="show-img"/>
+            {this.props.business.photoUrls.slice(0,4).map((url, index)=> <img key={index} className="show-img" src={url}/>)}
             </div>
 
             <div className="show-head">

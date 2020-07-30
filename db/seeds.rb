@@ -43,6 +43,18 @@ blue_barn_1 = open('https://yalp-seeds.s3-us-west-1.amazonaws.com/blue_barn_1.jp
 
 blue_barn.photos.attach(io: blue_barn_1, filename:'blue_barn_1.jpeg')
 
+blue_barn_2 = open('https://yalp-seeds.s3-us-west-1.amazonaws.com/blue_barn_2.jpg')
+
+blue_barn.photos.attach(io: blue_barn_2, filename:'blue_barn_2.jpg')
+
+blue_barn_3 = open('https://yalp-seeds.s3-us-west-1.amazonaws.com/blue_barn_3.jpg')
+
+blue_barn.photos.attach(io: blue_barn_3, filename:'blue_barn_3.jpg')
+
+blue_barn_4 = open('https://yalp-seeds.s3-us-west-1.amazonaws.com/blue_barn_4.jpg')
+
+blue_barn.photos.attach(io: blue_barn_4, filename:'blue_barn_4.jpg')
+
 #purple rice
 purple_rice = Business.create({name: 'Purple Rice', 
    address: '509 Haight St, San Francisco, CA 94117',
@@ -55,8 +67,17 @@ purple_rice = Business.create({name: 'Purple Rice',
    weekend_hours: '4:30 pm - 9:30 pm'})
 
 purple_rice_1 = open('https://yalp-seeds.s3-us-west-1.amazonaws.com/purplerice1.jpg')
-
 purple_rice.photos.attach(io: purple_rice_1, filename:'purplerice1.jpeg')
+
+purple_rice_2 = open('https://yalp-seeds.s3-us-west-1.amazonaws.com/purplerice2.jpg')
+purple_rice.photos.attach(io: purple_rice_2, filename:'purplerice2.jpg')
+
+
+purple_rice_3 = open('https://yalp-seeds.s3-us-west-1.amazonaws.com/purplerice3.jpg')
+purple_rice.photos.attach(io: purple_rice_3, filename:'purplerice3.jpg')
+
+purple_rice_4 = open('https://yalp-seeds.s3-us-west-1.amazonaws.com/purplerice4.jpg')
+purple_rice.photos.attach(io: purple_rice_4, filename:'purplerice4.jpg')
 
 #Kilowatt
 kilowatt = Business.create({name: 'Kilowatt', 
@@ -69,8 +90,17 @@ kilowatt = Business.create({name: 'Kilowatt',
    weekday_hours: '5:00 pm - 2:00 am',
    weekend_hours: '3:00 pm - 2:00 am'})
 
-kilowatt_1 = open('https://yalp-seeds.s3-us-west-1.amazonaws.com/kilowatt1.jpg')
-kilowatt.photos.attach(io: kilowatt_1, filename:'kilowatt1.jpeg')
+kilowatt1 = open('https://yalp-seeds.s3-us-west-1.amazonaws.com/kilowatt1.jpg')
+kilowatt.photos.attach(io: kilowatt1, filename:'kilowatt1.jpeg')
+
+kilowatt2 = open('https://yalp-seeds.s3-us-west-1.amazonaws.com/kilowatt2.jpg')
+kilowatt.photos.attach(io: kilowatt2, filename:'kilowatt2.jpeg')
+
+kilowatt3 = open('https://yalp-seeds.s3-us-west-1.amazonaws.com/kilowatt3.jpg')
+kilowatt.photos.attach(io: kilowatt3, filename:'kilowatt3.jpeg')
+
+kilowatt4 = open('https://yalp-seeds.s3-us-west-1.amazonaws.com/kilowatt4.jpg')
+kilowatt.photos.attach(io: kilowatt4, filename:'kilowatt4.jpeg')
 
 #Ippudo
 
@@ -84,8 +114,17 @@ ippudo = Business.create({name: 'Ippudo',
    weekday_hours: 'Closed',
    weekend_hours: 'Closed'})
 
-   ippudo_1 = open('https://yalp-seeds.s3-us-west-1.amazonaws.com/ippudo1.jpg')
-   ippudo.photos.attach(io: ippudo_1, filename:'ippudo1.jpeg')
+   ippudo1 = open('https://yalp-seeds.s3-us-west-1.amazonaws.com/ippudo1.jpg')
+   ippudo.photos.attach(io: ippudo1, filename:'ippudo1.jpeg')
+
+   ippudo2 = open('https://yalp-seeds.s3-us-west-1.amazonaws.com/ippudo2.jpg')
+   ippudo.photos.attach(io: ippudo2, filename:'ippudo2.jpeg')
+
+   ippudo3 = open('https://yalp-seeds.s3-us-west-1.amazonaws.com/ippudo3.jpg')
+   ippudo.photos.attach(io: ippudo3, filename:'ippudo3.jpeg')
+
+   ippudo4 = open('https://yalp-seeds.s3-us-west-1.amazonaws.com/ippudo4.jpg')
+   ippudo.photos.attach(io: ippudo4, filename:'ippudo4.jpeg')
 
 #Wildseed
 
@@ -101,6 +140,15 @@ wildseed = Business.create({name: 'Wildseed',
 
    wildseed_1 = open('https://yalp-seeds.s3-us-west-1.amazonaws.com/wildseed1.jpg')
    wildseed.photos.attach(io: wildseed_1, filename:'wildseed1.jpeg')
+
+   wildseed2 = open('https://yalp-seeds.s3-us-west-1.amazonaws.com/wildseed2.jpg')
+   wildseed.photos.attach(io: wildseed2, filename:'wildseed2.jpeg')
+
+   wildseed3 = open('https://yalp-seeds.s3-us-west-1.amazonaws.com/wildseed3.jpg')
+   wildseed.photos.attach(io: wildseed3, filename:'wildseed3.jpeg')
+
+   wildseed4 = open('https://yalp-seeds.s3-us-west-1.amazonaws.com/wildseed4.jpg')
+   wildseed.photos.attach(io: wildseed4, filename:'wildseed4.jpeg')
    
 
    
