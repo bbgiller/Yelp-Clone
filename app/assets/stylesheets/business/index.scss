@@ -3,9 +3,13 @@
 // }
 
 .business-index-item-box {
-    border: 1px solid black;
+    border: 1px solid #dadadc;
     width: 40%;
     padding-top: 20px;
+}
+
+.business-index-item-box:hover {
+    box-shadow: 5px 10px 18px #888888
 }
 
 .business-index-item-name {
@@ -35,11 +39,11 @@
     display: inline;
     /* transform: translate(40%, -280%); */
     margin-left: 80%;
-    transform: translate(10px, -600%);
+    transform: translate(-8px, -600%);
     float: right;
 }
 
-img {
+.img-index {
     display: inline-block;
     width: 150px;
     height: 150px;

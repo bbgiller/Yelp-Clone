@@ -27,7 +27,7 @@ class BusinessShow extends React.Component {
             </div>
 
             <div className="show-pictures">
-                {/* <h1>Pictures go here</h1> */}
+            <img src={this.props.business.photoUrls ? this.props.business.photoUrls[0] : null} className="show-img"/>
             </div>
 
             <div className="show-head">
