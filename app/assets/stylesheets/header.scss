@@ -13,7 +13,7 @@
     padding-top: 30px;
     display:flex;
     position: relative;
-    transform: translate(65%);
+    transform: translate(73%);
     font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold ;
@@ -80,4 +80,11 @@
 }
 .symbol {
     color:red;
+}
+
+.searchbar-input {
+    box-shadow: 5px 4px 16px #888888;
+    transform: translate(-17%, -52px);
+    height: 35px;
+    width: 29%;
 }

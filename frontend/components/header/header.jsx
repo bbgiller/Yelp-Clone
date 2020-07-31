@@ -9,7 +9,7 @@ const Header = ({ currentUser, logout }) => {
       </Link>
       <div className="searchbar-container">
       <form className="searchbar">
-        <input type="text" value={null} placeholder="Find restaurants" className="searchbar-input"/>
+        <input className="searchbar-input" type="text" value={null} placeholder="Find restaurants" className="searchbar-input"/>
 
       </form>
       <Link to="/businesses" className="all-businesses-link">All Businesses!</Link>
