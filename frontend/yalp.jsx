@@ -4,7 +4,8 @@ import {signup, login, logout} from './actions/session_actions';
 import configureStore from './store/store';
 import Root from './components/root';
 
-import {fetchBusinesses, fetchBusiness} from './actions/business_actions'
+import {fetchBusinesses, fetchBusiness} from './actions/business_actions';
+import {fetchReview, fetchReviews, createReview} from './actions/review_actions'
 
 const store = configureStore()
 
@@ -33,6 +34,9 @@ document.addEventListener('DOMContentLoaded', () => {
     window.store = store;
     window.getState = store.getState;
     window.dispatch = store.dispatch;
+    window.fetchReview = fetchReview;
+    window.fetchReviews = fetchReviews;
+    window.createReview = createReview;
     //TESTING END
 
 

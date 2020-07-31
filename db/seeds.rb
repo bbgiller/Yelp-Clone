@@ -159,5 +159,11 @@ wildseed = Business.create({name: 'Wildseed',
       business_id: blue_barn
    })
    
+   review1 = Review.create({
+      rating: 4,
+      body: 'Great restaurant!',
+      author_id: User.first.id,
+      business_id: Business.first.id
+   })
 
    

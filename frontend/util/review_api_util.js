@@ -1,8 +1,12 @@
-export const fetchReviews = () => (
-    $.ajax({
-        url: `/api/reviews`
-    })
-)
+export const fetchReviews = () => {
+    debugger
+    return(
+        
+        $.ajax({
+            url: `/api/reviews`
+        })
+    )
+    }
 
 export const fetchReview = reviewId => (
     $.ajax({
@@ -27,7 +31,7 @@ export const updateReview = review => (
     })
 )
 
-export const deleteReview = reviewId (
+export const deleteReview = reviewId => (
     $.ajax({
         method: 'DESTROY',
         url: `/api/reviews/${reviewId}`,
