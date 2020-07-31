@@ -25,7 +25,7 @@ User.destroy_all
 
 Business.destroy_all
 
- User.create([{email: 'arthurmorgan@gmail.com', password: '123456', 
+ demo = User.create([{email: 'arthurmorgan@gmail.com', password: '123456', 
     first_name: 'Arthur', last_name: 'Morgan', zip_code:'1000'}])
 
 #blue_barn
@@ -149,6 +149,15 @@ wildseed = Business.create({name: 'Wildseed',
 
    wildseed4 = open('https://yalp-seeds.s3-us-west-1.amazonaws.com/wildseed4.jpg')
    wildseed.photos.attach(io: wildseed4, filename:'wildseed4.jpeg')
+
+
+
+   review1 = Review.create({
+      rating: 4,
+      body: 'Great restaurant!',
+      author_id: demo,
+      business_id: blue_barn
+   })
    
 
    
