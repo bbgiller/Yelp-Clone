@@ -12,6 +12,7 @@ import {AuthRoute} from '../util/route_util'
 import {withRouter} from 'react-router'
 import BusinessIndexContainer from '../components/businesses/business_index_container'
 import BusinessShowContainer from '../components/businesses/business_show_container'
+import ReviewFormContainer from '../components/reviews/review_form_container'
 
 const App = () => (
   <div>
@@ -20,7 +21,8 @@ const App = () => (
       <Route exact path="/businesses" component={BusinessIndexContainer}/>
       <AuthRoute path="/login" component={LogInFormContainer} />
     <AuthRoute path="/signup" component={SignUpFormContainer} />
-    <Route path="/businesses/:businessId" component={BusinessShowContainer} />
+    <Route exact path="/businesses/:businessId" component={BusinessShowContainer} />
+    <Route exact path="/businesses/:businessId/review" component={ReviewFormContainer} />
     <Route path='*' component={HeaderContainer}/>
 
     </Switch>

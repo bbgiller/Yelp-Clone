@@ -51,7 +51,7 @@
     height: 265px;
     width: 100%;
     border: 1px solid black;
-    background: url('https://yalp-photos.s3-us-west-1.amazonaws.com/blue_barn_2.jpg'), url("https://yalp-photos.s3-us-west-1.amazonaws.com/blue_barn_1.jpeg"), url('https://yalp-photos.s3-us-west-1.amazonaws.com/blue_barn_3.jpg') ;
+   
     background-position: left , center, right;
     background-repeat: no-repeat;
 }
@@ -109,5 +109,18 @@
     width: 25%;
     height: 100%;
     display: inline;
+}
+
+.show-review-button {
+    background-color: #f43939;
+    border-radius: 3px;
+    border-spacing: 20px;
+    height: 26px;
+    width: 104px;
+    text-align: center;
+    padding-top: 13px;
+    color: white;
+    display: flex;
+    transform: translate(280%, -150%);
 }
 

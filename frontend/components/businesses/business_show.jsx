@@ -32,17 +32,25 @@ class BusinessShow extends React.Component {
             {this.props.business.photoUrls.slice(0,4).map((url, index)=> <img key={index} className="show-img" src={url}/>)}
             </div>
 
+            
+
             <div className="show-head">
                 <h1 className="show-business-name">{this.props.business.name}</h1>
                 <h2 className="show-business-category">{this.props.business.category}</h2>
             </div>
+
+            
             
             <div className="show-side-information-container">
                 <div className="show-side-information">
                     <a href={`${this.props.business.website}`} className="show-business-website"><p className="website-icon">↳</p> {this.props.business.website}</a>
-                    <p className="show-business-phonenumber"><p className="phone-icon" >✆</p> {this.props.business.phone_number}</p>
+                    <div className="show-business-phonenumber"><div className="phone-icon" >✆</div> {this.props.business.phone_number}</div>
                 </div>
             </div>
+
+            <button className="show-review-button">
+                Write a Review
+            </button>
 
             <div className="map-hours-container">
 
