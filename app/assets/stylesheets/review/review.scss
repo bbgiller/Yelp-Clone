@@ -1,5 +1,44 @@
+.review-form {
+    display: flex;
+    justify-content: center;
+    transform: translate(0%, 24%);
+}
+
+.review-business-name {
+    color: #0073bb;
+    font-size: 14px;
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    display: flex;
+    transform: translate(178%,-18%);
+}
+
+.review-business-name :hover {
+    border-bottom: 1px solid #0073bb ;
+}
+.review-form-radios {
+    transform: translate(123%, -6%);
+}
+
+
+
+
 .review-form-body {
-    height: 125px;
-    width: 100%;
+    height: 345px;
+    width: auto;
+    width: 587px;
     border: 1px solid #ccc;
+}
+
+.review-form-post-review {
+    background-color: #D32324;
+    border:1px solid #d32323;
+    color: white;
+    font-size:14px ;
+    width: 240px;
+    height: 48px;
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    text-align: center;
+    transform: translate(-243%, 742%);
+    border-radius: 3px;
+    font-weight: 700;
 }

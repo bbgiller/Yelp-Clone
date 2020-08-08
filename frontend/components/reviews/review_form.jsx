@@ -43,15 +43,16 @@ class ReviewForm extends React.Component {
 
             </div>
 
-            <div className="review-business-name">
-                <h1>{this.props.business.name}</h1>
-            </div>
 
 
        =
             <div>
                 <form className="review-form" onSubmit={this.handleSubmit}>
                     <div className="review-form-rating" ></div>
+            <div className="review-business-name">
+                <Link to ={`/businesses/${this.props.businessId}`}><h1>{this.props.business.name}</h1> </Link>
+            </div>
+                        <div className="review-form-radios">
                         <input className="rating1" type="radio" name="rating" value="1" checked={this.state.rating ===1} onChange={this.update("rating")}/>
                         <label htmlFor="rating1">1</label>
                         <input className="rating2" type="radio" name="rating" value="2" checked={this.state.rating === 2} onChange={this.update("rating")} />
@@ -62,6 +63,7 @@ class ReviewForm extends React.Component {
                         <label htmlFor="rating4">4</label>
                         <input className="rating5" type="radio" name="rating" value="5" checked={this.state.rating ===5} onChange={this.update("rating")}/>
                         <label htmlFor="rating5">5</label>
+                        </div>
                     
 
                     <textarea className="review-form-body"
@@ -69,7 +71,7 @@ class ReviewForm extends React.Component {
                         onChange={this.update('body')}
                     ></textarea>
 
-                <input type="submit" className="review-form-submit"/>
+                <button type="submit" className="review-form-post-review">Post Review </button>
 
 
 

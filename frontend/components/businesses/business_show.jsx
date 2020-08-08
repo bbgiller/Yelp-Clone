@@ -1,6 +1,7 @@
 import React from 'react';
 import BusinessMap from './business_map';
-import HeaderContainer from '../header/header_container'
+import HeaderContainer from '../header/header_container';
+import {Link} from 'react-router-dom';
 
 class BusinessShow extends React.Component {
     constructor(props) {
@@ -49,7 +50,7 @@ class BusinessShow extends React.Component {
             </div>
 
             <button className="show-review-button">
-                Write a Review
+                <Link to={`/businesses/${this.props.business.id}/review`}>Write a Review</Link>
             </button>
 
             <div className="map-hours-container">
